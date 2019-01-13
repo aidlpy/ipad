@@ -62,8 +62,6 @@
     titleLabel.font = [UIFont systemFontOfSize:32];
     [self.view addSubview:titleLabel];
     
-    
-    
     __weak typeof(self) weakSelf = self;
     _currentView = [self.menuArray[0] objectForKey:@"view"];
     [self.view addSubview:_currentView];

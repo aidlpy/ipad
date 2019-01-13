@@ -60,17 +60,20 @@
     self.rightView.backgroundColor = [UIColor colorWithRed:0.89 green:0.90 blue:0.90 alpha:1.0];
     [self.view addSubview:self.rightView];
     
-    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,20,154,115)];
-    self.imageView.center = CGPointMake(self.rightView.frame.size.width/2,self.imageView.center.y);
-    [self.imageView setImage:[UIImage imageNamed:self.array[self.defalutIndex][@"image"]]];
-    [self.rightView addSubview:self.imageView];
+    self.locationBtn = [[UIButton alloc] initWithFrame:CGRectMake(0,20,154,115)];
+    self.locationBtn.center = CGPointMake(self.rightView.frame.size.width/2,self.locationBtn.center.y);
+//    [self.locationBtn setImage:[UIImage imageNamed:self.array[self.defalutIndex][@"image"]]];
+    [self.locationBtn setTitle:self.array[self.defalutIndex][@"title"] forState:UIControlStateNormal];
+    [self.locationBtn  setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.rightView addSubview:self.locationBtn];
     
     self.leftbtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 45, 64, 64)];
     [self.leftbtn setImage:[UIImage imageNamed:@"image.bundle/leftarrow"] forState:UIControlStateNormal];
     [self.leftbtn addTarget:self action:@selector(slide:) forControlEvents:UIControlEventTouchUpInside];
+
     [self.rightView addSubview:self.leftbtn];
     
-    self.rightbtn = [[UIButton alloc] initWithFrame:CGRectMake(self.imageView.frame.origin.x+self.imageView.frame.size.width, 45, 64, 64)];
+    self.rightbtn = [[UIButton alloc] initWithFrame:CGRectMake(self.locationBtn.frame.origin.x+self.locationBtn.frame.size.width, 45, 64, 64)];
     [self.rightbtn setImage:[UIImage imageNamed:@"image.bundle/rightarrow"] forState:UIControlStateNormal];
     [self.rightbtn addTarget:self action:@selector(slide:) forControlEvents:UIControlEventTouchUpInside];
     [self.rightView addSubview:self.rightbtn];
@@ -88,7 +91,7 @@
     [self.leftView addSubview:self.textView];
     [self updateSelectedArray];
     
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.imageView.frame.origin.y+self.imageView.frame.size.height+20,self.rightView.frame.size.width,self.rightView.frame.size.height-self.imageView.frame.origin.y-self.imageView.frame.size.height-20)];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.locationBtn.frame.origin.y+self.locationBtn.frame.size.height+20,self.rightView.frame.size.width,self.rightView.frame.size.height-self.locationBtn.frame.origin.y-self.locationBtn.frame.size.height-20)];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -136,7 +139,7 @@
     NSLog(@"self.cellArray==>%@",self.cellArray);
     self.defalutIndex = indexPath.row;
     [self updateSelectedArray];
-    [self.imageView setImage:[UIImage imageNamed:self.array[self.defalutIndex][@"image"]]];
+    [self.locationBtn setTitle:self.array[self.defalutIndex][@"title"] forState:UIControlStateNormal];
     self.textView.text = self.array[self.defalutIndex][@"detail"];
     self.textView.frame = CGRectMake(self.textView.frame.origin.x,self.textView.frame.origin.y, self.textView.frame.size.width, self.textView.contentSize.height);
     [self.tableView reloadData];
@@ -167,7 +170,7 @@
         }
     }
     [self updateSelectedArray];
-    [self.imageView setImage:[UIImage imageNamed:self.array[self.defalutIndex][@"image"]]];
+    [self.locationBtn setTitle:self.array[self.defalutIndex][@"title"] forState:UIControlStateNormal];
     self.textView.text = self.array[self.defalutIndex][@"detail"];
     self.textView.frame = CGRectMake(self.textView.frame.origin.x,self.textView.frame.origin.y, self.textView.frame.size.width, self.textView.contentSize.height);
     [self.tableView reloadData];

@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign)NSInteger defalutIndex;
 @property(nonatomic,strong)UILabel *titleLabel;
 @property(nonatomic,strong)UITextView *textView;
-@property(nonatomic,strong)UIImageView *imageView;
+@property(nonatomic,strong)UIButton *locationBtn;
 @property(nonatomic,strong)UIButton *rightbtn;
 @property(nonatomic,strong)UIButton *leftbtn;
 @property(nonatomic,strong)NSMutableArray *tagsArray;

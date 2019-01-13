@@ -61,12 +61,12 @@
         [_btn3.layer setBorderColor:borderColor.CGColor];
         [self addSubview:_btn3];
         
-        NSArray *imageArray = @[@"图片",@"图片",@"图片",@"图片",@"图片",@"图片",@"图片",@"图片"];
+        NSArray *imageArray = @[@{@"title":@"图片1",@"tag":@"0"},@{@"title":@"图片3",@"tag":@"2"},@{@"title":@"图片5",@"tag":@"4"},@{@"title":@"图片7",@"tag":@"6"},@{@"title":@"图片2",@"tag":@"1"},@{@"title":@"图片4",@"tag":@"3"},@{@"title":@"图片6",@"tag":@"5"},@{@"title":@"图片8",@"tag":@"7"}];
         [imageArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(292+(idx>3?115:0),idx>3?(idx-4)*45:idx*45, 115, 45)];
             btn.backgroundColor = backColor;
-            btn.tag =1000+idx;
-            [btn setTitle:obj forState:UIControlStateNormal];
+            btn.tag =1000+[obj[@"tag"] integerValue];
+            [btn setTitle:obj[@"title"] forState:UIControlStateNormal];
             [btn addTarget:self action:@selector(detailAction:) forControlEvents:UIControlEventTouchUpInside];
             [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             [btn.layer setBorderWidth:2.0f];
