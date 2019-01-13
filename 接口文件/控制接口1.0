@@ -1,0 +1,121 @@
+{
+	index=0         形象墙
+	led:0           0：关闭   1：开启
+	sound:0         音响
+	volume:0        音量   0-1(float)
+	lighting:0      灯光   
+	computer:0      电脑主机
+	videoCPU:0		视频处理器
+}
+
+{
+	index=1         专题1
+	orderScreen   	序言提头屏       0：关闭   1：开启
+	orderSound      序言音响
+	orderVolume     序言音响的音量   0-1(float)
+	lighting      	灯光   
+	brightness    	灯光的亮度   0-1(float)
+	liquidCrystal   液晶屏
+	sound			音响
+	volume   		音响的音量  0-1(float)
+	computer  		电脑主机
+}
+
+{
+	index=2         专题2
+	orderScreen   	序言提头屏       0：关闭   1：开启
+	orderSound      序言音响
+	orderVolume     序言音响的音量   0-1(float)
+	lighting      	灯光   
+	liquidCrystal   液晶屏
+	sound			音响
+	volume 			音响的音量   0-1(float)
+	computer  		电脑主机
+}
+
+
+{
+	index=3         专题3
+	orderScreen   	序言提头屏       0：关闭   1：开启
+	orderSound      序言音响
+	orderVolume     序言音响的音量   0-1(float)
+	lighting      	灯光   
+	sound			音响
+	volume 			音响的音量   0-1(float)
+	slideTrack   	滑轨-液晶屏
+	computer  		电脑主机
+}
+
+{
+	index=4         专题4
+	projector   	投影仪       0：关闭   1：开启
+	touchMachine   	触摸一体机
+	lighting      	灯光   
+	liquidCrystal   液晶屏 
+	rongheqi		融合器
+	sound		  	音响
+	volume       	音响的音量   0-1(float)
+}
+
+{
+	index=5         专题5
+	projector   	投影仪       0：关闭   1：开启
+	lighting      	灯光   
+	sound		  	音响
+	volume       	音响的音量   0-1(float)
+	computer  		电脑主机     
+	rongheqi		融合器
+	
+}
+
+{
+	index=6         专题6
+	orderScreen   	序言提头屏       0：关闭   1：开启
+	orderSound      序言音响
+	orderVolume     序言音响的音量   0-1(float)
+	liquidCrystal   液晶屏
+	lighting      	灯光   
+	sound			音响
+	volume 			音响的音量   0-1(float)
+	computer  		电脑主机
+}
+
+{
+	index=7         历史馆
+	touchMachine   	触摸一体机       0：关闭   1：开启
+}
+
+{
+	index=8         机房
+	server   		服务器       0：关闭   1：开启
+}
+
+{
+	index=9         	娱乐区
+	tableGameMachine   	桌游一体机       0：关闭   1：开启
+	parkourProjector   	跑酷投影
+	parkourSound        跑酷音响   
+	parkourVolume      	跑酷音响的音量   0-1(float)
+	parkourComputer    	跑酷主机   
+	parkourLighting    	跑酷灯光
+	VRComputer  		vr主机
+	VRLighting  		vr灯光
+}
+
+{
+	index=10         心理咨询室
+	computer   		主机       0：关闭   1：开启
+	projector    	投影
+}
+
+{
+	index=11         全厅
+	control:0           0：关闭   1：开启
+	device:0         0：关闭   1：开启
+	lighting:0      0：关闭   1：开启
+}
+
+
+
+
+

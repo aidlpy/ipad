@@ -1,0 +1,249 @@
+[{
+    "title": "灯光",
+    "body": [ {
+        "title": "全厅控制",
+        "type": "1"
+    },{
+        "title": "中庭",
+        "type": "1"
+    }, {
+        "title": "形象墙",
+        "type": "1"
+    },{
+        "title": "专题一",
+        "type": "1"
+    },{
+        "title": "专题二",
+        "type": "1"
+    },{
+        "title": "专题三",
+        "type": "1"
+    },{
+        "title": "专题四",
+        "type": "1"
+    },{
+        "title": "专题五",
+        "type": "1"
+    },{
+        "title": "专题六",
+        "type": "1"
+    },{
+        "title": "娱乐区桌游",
+        "type": "1"
+    },{
+        "title": "娱乐区跑酷",
+        "type": "1"
+    },{
+        "title": "娱乐区VR",
+        "type": "1"
+    },{
+        "title": "心理咨询室",
+        "type": "1"
+    }]
+}, {
+    "title": "插座",
+    "body": [{
+        "title": "全厅插座",
+        "type": "1"
+    }, {
+        "title": "形象墙",
+        "type": "1"
+    }, {
+        "title": "专题一",
+        "type": "1"
+    }, {
+        "title": "专题二",
+        "type": "1"
+    }, {
+        "title": "专题三",
+        "type": "1"
+    }, {
+        "title": "专题四",
+        "type": "1"
+    }, {
+        "title": "专题五",
+        "type": "1"
+    }, {
+        "title": "专题六",
+        "type": "1"
+    }, {
+        "title": "娱乐区桌游",
+        "type": "1"
+    }, {
+        "title": "娱乐区跑酷",
+        "type": "1"
+    }, {
+        "title": "娱乐区VR",
+        "type": "1"
+    }, {
+        "title": "心理咨询室",
+        "type": "1"
+    }]
+},
+{
+    "title": "电脑主机",
+    "body": [{
+        "title": "全厅电脑主机",
+        "type": "1"
+    }, {
+        "title": "形象墙",
+        "type": "1"
+    }, {
+        "title": "专题一序言",
+        "type": "1"
+    }, {
+        "title": "专题一",
+        "type": "1"
+    }, {
+        "title": "专题二序言",
+        "type": "1"
+    }, {
+        "title": "专题二",
+        "type": "1"
+    }, {
+        "title": "专题三序言",
+        "type": "1"
+    }, {
+        "title": "专题三",
+        "type": "1"
+    }, {
+        "title": "专题四",
+        "type": "1"
+    }, {
+        "title": "专题五",
+        "type": "1"
+    }, {
+        "title": "专题五备用机",
+        "type": "1"
+    }, {
+        "title": "专题六序言",
+        "type": "1"
+    }, {
+        "title": "专题六",
+        "type": "1"
+    }, {
+        "title": "娱乐区桌游",
+        "type": "1"
+    }, {
+        "title": "娱乐区跑酷",
+        "type": "1"
+    }, {
+        "title": "娱乐区VR",
+        "type": "1"
+    }, {
+        "title": "心理咨询室",
+        "type": "1"
+    }, {
+        "title": "院史馆",
+        "type": "1"
+    }]
+},
+{
+    "title": "投影机",
+    "body": [{
+        "title": "全厅投影",
+        "type": "1"
+    }, {
+        "title": "专题四投影1",
+        "type": "1"
+    }, {
+        "title": "专题四投影2",
+        "type": "1"
+    }, {
+        "title": "专题四投影3",
+        "type": "1"
+    }, {
+        "title": "专题四投影4",
+        "type": "1"
+    }, {
+        "title": "专题五投影1",
+        "type": "1"
+    }, {
+        "title": "专题五投影2",
+        "type": "1"
+    }, {
+        "title": "专题五投影3",
+        "type": "1"
+    }, {
+        "title": "娱乐区跑酷",
+        "type": "1"
+    }, {
+        "title": "心理咨询",
+        "type": "1"
+    }]
+},
+{
+    "title": "声音",
+    "body": [{
+        "title": "全厅声音",
+        "type": "1"
+    }, {
+        "title": "形象墙",
+        "sTitle": "音量：",
+        "type": "2"
+    }, {
+        "title": "专题一序言",
+        "sTitle": "音量：",
+        "type": "2"
+    }, {
+        "title": "专题一",
+        "sTitle": "音量：",
+        "type": "2"
+    }, {
+        "title": "专题二序言",
+        "sTitle": "音量：",
+        "type": "2"
+    }, {
+        "title": "专题二",
+        "sTitle": "音量：",
+        "type": "2"
+    }, {
+        "title": "专题三序言",
+        "sTitle": "音量：",
+        "type": "2"
+    }, {
+        "title": "专题三",
+        "sTitle": "音量：",
+        "type": "2"
+    }, {
+        "title": "专题四",
+        "sTitle": "音量：",
+        "type": "2"
+    }, {
+        "title": "专题五",
+        "sTitle": "音量：",
+        "type": "2"
+    }, {
+        "title": "专题五备用机",
+        "sTitle": "音量：",
+        "type": "2"
+    }, {
+        "title": "专题六序言",
+        "sTitle": "音量：",
+        "type": "2"
+    }, {
+        "title": "专题六",
+        "sTitle": "音量：",
+        "type": "2"
+    }, {
+        "title": "娱乐区桌游",
+        "sTitle": "音量：",
+        "type": "2"
+    }, {
+        "title": "娱乐区跑酷",
+        "sTitle": "音量：",
+        "type": "2"
+    }, {
+        "title": "娱乐区VR",
+        "sTitle": "音量：",
+        "type": "2"
+    }, {
+        "title": "心理咨询师",
+        "sTitle": "音量：",
+        "type": "2"
+    }, {
+        "title": "院史馆",
+        "sTitle": "音量：",
+        "type": "2"
+    }]
+}]

@@ -1,0 +1,57 @@
+{
+	type:0   0：生态  1：未检   
+	index:0  形象墙  
+	init:1   每个专题都有  1：表示初始化   
+	backgroundPlay  背景音乐播放   0暂停   1播放      
+	screenNumber:  屏幕编号   
+}
+
+{
+	type:0   0：生态  1：未检     （必传）
+	index:1  专题1     	  （必传）
+	close:  0：打开  1：关闭
+	play     序言播放  1播放  0暂停  2重播
+	screenNumber:  屏幕编号
+	screenIndex    点击屏幕里面的位置索引
+	secondViewVerticalIndex   二级界面水平索引
+	nextPage   1是下一页  0是上一页   其他值不处理
+}
+
+{
+	type:0   0：生态  1：未检   
+	index:2  专题2
+	play     序言播放  1播放  0暂停 2重播
+}
+
+{
+	type:0   0：生态  1：未检   
+	index:3  专题3
+	play     序言播放  1播放  0暂停 2重播
+	contentIndex   更换投屏内容索引 
+	categoryId     首页类目id，从0开始从左到右从上到下    
+	backgroundPlay  背景音乐播放   0暂停   1播放
+}
+
+{
+	type:0   0：生态  1：未检   
+	index:4  专题4
+	screenNumber:  屏幕编号
+}
+
+{
+	type:0   0：生态  1：未检  
+	index:5  专题5
+	close:  1：关闭 返回首页
+	screenNumber:  屏幕编号
+	categoryId     详情模块id	 通过这个id来显示那个标签页	0第一个标签 1第二个标签	
+	detailIndex    详情索引   
+	detailContentIndex  详情里面的内容索引   显示tab页
+}
+
+{
+	type:0   0：生态  1：未检  
+	index:6  专题6
+	screenNumber:  屏幕编号  对于生态 0：待机首页  1：视频 2：图片
+	play     序言播放  1播放  0暂停 2重播
+	backgroundPlay  背景音乐播放   0暂停   1播放
+}

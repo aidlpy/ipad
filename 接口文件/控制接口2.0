@@ -1,0 +1,119 @@
+{
+	index=0         灯光
+	all          	全厅 0：关闭   1：开启
+	center        	中庭
+	image        	形象墙
+	topic1      	专题1
+	topic2      	专题2
+	topic3			专题3
+	topic4			专题4
+	topic5			专题5
+	topic6			专题6
+	tableGame		桌游
+	parkour     	跑酷
+	VR				vr
+	psychology  	心里咨询室
+}
+
+{
+	index=1         插座
+	all          	全厅 0：关闭   1：开启
+	image        	形象墙
+	topic1      	专题1
+	topic2      	专题2
+	topic3			专题3
+	topic4			专题4
+	topic5			专题5
+	topic6			专题6
+	tableGame		桌游
+	parkour     	跑酷
+	VR				vr
+	psychology  	心里咨询室
+}
+
+{
+	index=2         主机
+	all          	全厅 0：关闭   1：开启
+	image        	形象墙
+	topic1Order     专题1序言
+	topic1      	专题1
+	topic2Order     专题2序言
+	topic2      	专题2
+	topic3Order     专题3序言
+	topic3			专题3
+	topic4			专题4
+	topic5Back		专题5备用机
+	topic5			专题5
+	topic6Order     专题6序言
+	topic6			专题6
+	tableGame		桌游
+	parkour     	跑酷
+	VR				vr
+	psychology  	心里咨询室
+	history  		历史馆
+}
+
+{
+	index=3         	投影机
+	all          		全厅 0：关闭   1：开启
+	topic4Projector1	专题4投影1
+	topic4Projector2	专题4投影2
+	topic4Projector3	专题4投影3
+	topic4Projector4	专题4投影4
+	topic5Projector1	专题5投影1
+	topic5Projector2	专题5投影2
+	topic5Projector3	专题5投影3
+	parkour     		跑酷
+	psychology  		心里咨询室
+}
+
+{
+	index=4         		声音
+	all          			全厅 0：关闭   1：开启
+	image        			形象墙
+	imageVolume       		形象墙音量0-1(float)
+
+	topic1Order      		专题1序言
+	topic1OrderVolume       专题1序言音量0-1(float)
+	topic1      			专题1
+	topic1Volume      		专题1音量0-1(float)
+
+	topic2Order      		专题2序言
+	topic2OrderVolume      	专题2序言音量0-1(float)
+	topic2      			专题2
+	topic2Volume      		专题2音量0-1(float)
+
+	topic3Order      		专题3序言
+	topic3OrderVolume      	专题3序言音量0-1(float)
+	topic3					专题3
+	topic3Volume      		专题3音量0-1(float)
+
+	topic4					专题4
+	topic4Volume      		专题4音量0-1(float)
+
+	topic5Back				专题5备用机
+	topic5BackVolume      	专题5备用机音量0-1(float)
+	topic5					专题5
+	topic5Volume      		专题5音量0-1(float)	
+
+	topic6Order      		专题6序言
+	topic6OrderVolume      	专题6序言音量0-1(float)
+	topic6					专题6
+	topic6Volume      		专题6音量0-1(float)	
+
+	tableGame				桌游
+	tableGameVolume			桌游音量0-1(float)
+
+	parkour     			跑酷
+	parkourVolume			跑酷音量0-1(float)
+
+	VR						vr
+	VRVolume				vr音量0-1(float)
+
+	psychology  			心里咨询室
+	psychologyVolume  		心里咨询室音量0-1(float)
+
+	history  				历史馆
+	historyVolume  			历史馆音量0-1(float)
+	
+}
