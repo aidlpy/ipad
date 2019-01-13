@@ -109,32 +109,69 @@
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = [UIColor clearColor];
     [self.rightView addSubview:self.tableView];
+    
+    UIButton *signDownBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.rightView.frame.origin.x - 80,self.view.frame.size.height-100, 50, 50)];
+    NSString *path = [[NSBundle  mainBundle] pathForResource:[NSString stringWithFormat:@"image.bundle/%@",@"sign-down-icon"] ofType:@"png"];
+    UIImage *image = [UIImage imageWithContentsOfFile:path];
+    [signDownBtn setImage:image forState:UIControlStateNormal];
+    [signDownBtn addTarget:self action:@selector(upA:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:signDownBtn];
+    
+    UIButton *signUpBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.rightView.frame.origin.x - 80,self.view.frame.size.height-200, 50, 50)];
+    NSString *path1 = [[NSBundle  mainBundle] pathForResource:[NSString stringWithFormat:@"image.bundle/%@",@"sign-up-icon"] ofType:@"png"];
+    UIImage *image1 = [UIImage imageWithContentsOfFile:path1];
+    [signUpBtn setImage:image1 forState:UIControlStateNormal];
+    [signUpBtn addTarget:self action:@selector(downA:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:signUpBtn];
 }
 
 -(void)handleSwipeFrom:(UISwipeGestureRecognizer *)upRecongizer{
     if (upRecongizer.direction  == UISwipeGestureRecognizerDirectionDown) {
-          _imageIndex++;
-        NSArray *imageArray = self.array[self.defalutIndex][@"tags"][self.indexRow][@"detail"];
-        if (_imageIndex > imageArray.count -1) {
-            _imageIndex = imageArray.count -1;\
-            return;
-        }
-        self.model.nextPage = 1;
-        [self.model request];
+        [self downAction];
     }
     if (upRecongizer.direction == UISwipeGestureRecognizerDirectionUp) {
-        if (_imageIndex != 0) {
-            _imageIndex--;
-        }
-        else
-        {
-            return;
-        }
-        self.model.nextPage = 0;
-        [self.model request];
+        [self upAction];
     }
 
     [self loadCurrentPdf:self.indexRow];
+}
+
+
+-(void)upA:(UIButton *)sender{
+    [self upAction];
+    [self loadCurrentPdf:self.indexRow];
+}
+
+-(void)downA:(UIButton *)sender{
+    [self downAction];
+    [self loadCurrentPdf:self.indexRow];
+}
+
+-(void)upAction{
+    
+    _imageIndex++;
+    NSArray *imageArray = self.array[self.defalutIndex][@"tags"][self.indexRow][@"detail"];
+    if (_imageIndex > imageArray.count -1) {
+        _imageIndex = imageArray.count -1;\
+        return;
+    }
+    self.model.nextPage = 1;
+    [self.model request];
+    
+}
+
+-(void)downAction{
+    
+    if (_imageIndex != 0) {
+        _imageIndex--;
+    }
+    else
+    {
+        return;
+    }
+    self.model.nextPage = 0;
+    [self.model request];
+    
 }
 
 

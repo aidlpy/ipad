@@ -1,0 +1,24 @@
+PODS:
+  - MBProgressHUD (0.9.2)
+  - MJExtension (3.0.15.1)
+  - YYCache (1.0.4)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 0.9.2)
+  - MJExtension
+  - YYCache
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MBProgressHUD
+    - MJExtension
+    - YYCache
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+
+PODFILE CHECKSUM: f40e2e9b652022ef526a149e66586bd5747bd77e
+
+COCOAPODS: 1.5.3

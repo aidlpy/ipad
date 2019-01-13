@@ -41,7 +41,7 @@
     _timeEvent = [[YSEQPThemeThreeTimeEvent alloc] init];
     _timeEvent.type = type;
     _timeEvent.index = self.model.contentIndex+1;
-   // __weak __typeof(self)weakSelf = self;
+
 }
 
 - (void)viewDidLoad {
@@ -54,8 +54,6 @@
 -(void)initData{
     _index = 0 ;
     _array = [BaseViewController readLocalFileWithName:_isM?@"mthree":@"ethree"][self.model.categoryId];
-    NSLog(@"_array==>%@",_array);
-    
 }
 
 -(void)initUI{
