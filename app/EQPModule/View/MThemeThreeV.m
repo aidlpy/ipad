@@ -47,15 +47,16 @@
         }];
 
         
-//        UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(_btn1.frame.size.width+_btn1.frame.origin.x-45, _btn1.frame.origin.y, 45, 45)];
-//        btn.backgroundColor = [UIColor redColor];
-//        [btn.layer setCornerRadius:22.5];
-//        [btn.layer setBorderWidth:1.0f];
-//        [btn.layer setBorderColor:[UIColor grayColor].CGColor];
-//        [btn addTarget:self action:@selector(selectedAction:) forControlEvents:UIControlEventTouchUpInside];
-//        [btn setImage:[UIImage imageNamed:@""] forState:UIControlStateSelected];
-//        [btn setImage:[UIImage imageNamed:@"image.bundle/selected"] forState:UIControlStateSelected];
-//        [self addSubview:btn];
+        UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(240,0, 30, 30)];
+        btn.backgroundColor = [UIColor whiteColor];
+        [btn.layer setCornerRadius:15];
+        [btn.layer setBorderWidth:1.0f];
+        [btn.layer setBorderColor:[UIColor grayColor].CGColor];
+        [btn addTarget:self action:@selector(selectedAction:) forControlEvents:UIControlEventTouchUpInside];
+        [btn setImage:[UIImage imageNamed:@""] forState:UIControlStateSelected];
+        [btn setImage:[UIImage imageNamed:@"image.bundle/selected"] forState:UIControlStateSelected];
+        btn.clipsToBounds = YES;
+        [self addSubview:btn];
 //
 
         self.titleLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(0,279, 85, 20)];
