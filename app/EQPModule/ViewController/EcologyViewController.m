@@ -81,6 +81,10 @@
         if ([weakSelf.currentView isKindOfClass:[EThemeThreeV class]]) {
             EThemeThreeV *ethree = (EThemeThreeV *)weakSelf.currentView;
             ethree.changeBlock = ^(YSEQPThemeThreeModel *model){
+                NSArray *list = [BaseViewController readLocalFileWithName:@"ethree"][model.categoryId];
+                if (list.count == 0) {
+                    return;
+                }
                 EThreeChangeVC *vc = [[EThreeChangeVC alloc] initWithModel:model];
                 vc.isM = NO;
                 [self.navigationController pushViewController:vc animated:YES];
