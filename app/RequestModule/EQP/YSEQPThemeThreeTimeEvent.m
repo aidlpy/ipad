@@ -29,6 +29,7 @@
     }else {
         [self stopRepeatEvent];
         [YSSocketRequest requestTimeEventWithParameters:@{@"type":@(self.type),
+                                                          @"categoryId":@(self.categoryId),
                                                           @"index":@(self.index)
                                                           }
                                                complete:nil];
@@ -52,6 +53,7 @@
     
 #warning test
     [YSSocketRequest requestTimeEventWithParameters:@{@"type":@(self.type),
+                                                      @"categoryId":@(self.categoryId),
                                                       @"statue":@"1",
                                                       @"index":@(self.index)
                                                       }
@@ -73,6 +75,7 @@
     
 #warning test
     [YSSocketRequest requestTimeEventWithParameters:@{@"type":@(self.type),
+                                                      @"categoryId":@(self.categoryId),
                                                       @"index":@(self.index),
                                                       @"statue":@"2"} complete:nil];
     [self performSelector:@selector(reportFirstEvent) withObject:nil afterDelay:kDelay];

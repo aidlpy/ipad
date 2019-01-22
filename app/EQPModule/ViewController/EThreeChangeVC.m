@@ -40,6 +40,7 @@
     
     _timeEvent = [[YSEQPThemeThreeTimeEvent alloc] init];
     _timeEvent.type = type;
+    _timeEvent.categoryId = _model.categoryId;
     _timeEvent.index = self.model.contentIndex+1;
 
 }

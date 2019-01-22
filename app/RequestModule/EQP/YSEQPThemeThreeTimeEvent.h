@@ -11,6 +11,7 @@
 @interface YSEQPThemeThreeTimeEvent : NSObject
 
 @property (nonatomic, assign) NSInteger type;  //0生态   1未检
+@property (nonatomic, assign) NSInteger categoryId;  //
 @property (nonatomic, assign) NSInteger index;
 
 - (void)stopRepeatEvent;
