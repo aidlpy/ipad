@@ -30,7 +30,7 @@
         
         
         NSArray *array = @[@{@"title":@"首页",@"tag":@"0",@"frame":@"{{90,0},{170,90}}"},@{@"title":@"目录1",@"tag":@"1",@"frame":@"{{270,0},{80,40}}"},@{@"title":@"网络犯罪",@"tag":@"5",@"frame":@"{{270,50},{80,40}}"},@{@"title":@"目录2",@"tag":@"2",@"frame":@"{{360,0},{80,40}}"},
-                           @{@"title":@"校园暴力",@"tag":@"6",@"frame":@"{{360,50},{80,40}}"},@{@"title":@"青春保护\n守则",@"tag":@"3",@"frame":@"{{450,0},{80,40}}"},@{@"title":@"性侵",@"tag":@"7",@"frame":@"{{450,50},{80,40}}"},@{@"title":@"",@"tag":@"4",@"frame":@"{{540,0},{80,40}}"},@{@"title":@"诈骗",@"tag":@"8",@"frame":@"{{540,50},{80,40}}"},@{@"title":@"",@"tag":@"9",@"frame":@"{{90,100},{80,40}}"},@{@"title":@"",@"tag":@"15",@"frame":@"{{90,150},{80,40}}"},@{@"title":@"",@"tag":@"10",@"frame":@"{{180,100},{80,40}}"},@{@"title":@"",@"tag":@"16",@"frame":@"{{180,150},{80,40}}"},@{@"title":@"",@"tag":@"11",@"frame":@"{{270,100},{80,40}}"},
+                           @{@"title":@"校园暴力",@"tag":@"6",@"frame":@"{{360,50},{80,40}}"},@{@"title":@"青春保护\n守则",@"tag":@"3",@"frame":@"{{450,0},{80,40}}"},@{@"title":@"性侵",@"tag":@"7",@"frame":@"{{450,50},{80,40}}"},@{@"title":@"我是\n一个小美丽",@"tag":@"4",@"frame":@"{{540,0},{80,40}}"},@{@"title":@"诈骗",@"tag":@"8",@"frame":@"{{540,50},{80,40}}"},@{@"title":@"",@"tag":@"9",@"frame":@"{{90,100},{80,40}}"},@{@"title":@"",@"tag":@"15",@"frame":@"{{90,150},{80,40}}"},@{@"title":@"",@"tag":@"10",@"frame":@"{{180,100},{80,40}}"},@{@"title":@"",@"tag":@"16",@"frame":@"{{180,150},{80,40}}"},@{@"title":@"",@"tag":@"11",@"frame":@"{{270,100},{80,40}}"},
                            @{@"title":@"",@"tag":@"17",@"frame":@"{{270,150},{80,40}}"},@{@"title":@"",@"tag":@"12",@"frame":@"{{360,100},{80,40}}"},@{@"title":@"",@"tag":@"18",@"frame":@"{{360,150},{80,40}}"},@{@"title":@"",@"tag":@"13",@"frame":@"{{450,100},{80,40}}"},@{@"title":@"",@"tag":@"19",@"frame":@"{{450,150},{80,40}}"},@{@"title":@"",@"tag":@"14",@"frame":@"{{540,100},{80,40}}"},@{@"title":@"",@"tag":@"20",@"frame":@"{{540,150},{80,40}}"}];
         
         [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -42,6 +42,8 @@
             [btn.layer setBorderWidth:2.0f];
             [btn.layer setBorderColor:borderColor.CGColor];
              btn.titleLabel.font = [UIFont systemFontOfSize:idx ==0?16:10];
+            btn.titleLabel.numberOfLines = 2;
+            btn.titleLabel.textAlignment = NSTextAlignmentCenter;
             [btn addTarget:self action:@selector(changeAction:) forControlEvents:UIControlEventTouchUpInside];
             [self addSubview:btn];
         }];
