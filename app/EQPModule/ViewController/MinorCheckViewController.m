@@ -18,6 +18,7 @@
 #import "EFiveDetailVC.h"
 #import "EThreeChangeVC.h"
 #import "YSEQPThemeModelManager.h"
+#import "MOneSubVC.h"
 
 @interface MinorCheckViewController ()
 {
@@ -98,6 +99,19 @@
             };
         }
         [self.view addSubview:weakSelf.currentView];
+        
+        
+        if ([weakSelf.currentView isKindOfClass:[MThemeOneV class]]) {
+            MThemeOneV *mone = (MThemeOneV *)weakSelf.currentView;
+            mone.selectedBlock = ^{
+                
+                MOneSubVC *vc = [[MOneSubVC alloc] init];
+                [self.navigationController  pushViewController:vc animated:YES];
+                
+            };
+        
+        }
+        
     };
     [self.view addSubview:selectView];
     

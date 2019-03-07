@@ -7,6 +7,7 @@
 //
 
 #import "MThemeOneV.h"
+#import "MOneSubVC.h"
 
 @implementation MThemeOneV
 -(instancetype)initWithFrame:(CGRect)frame{
@@ -32,14 +33,12 @@
         self.titleLabel2.font = [UIFont systemFontOfSize:20];
         [self addSubview:self.titleLabel2];
         
-        NSArray *array = @[@{@"title":@"领导1",@"frame":@"{{91,0},{91,77}}"},
-                           @{@"title":@"领导2",@"frame":@"{{168,0},{91,77}}"},
-                            @{@"title":@"领导3",@"frame":@"{{91,77},{91,77}}"},
-                             @{@"title":@"领导4",@"frame":@"{{168,77},{91,77}}"}];
+        NSArray *array = @[@{@"title":@"第三屏幕",@"frame":@"{{91,0},{182,154}}"}];
         [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             UIButton  *btn = [[UIButton alloc] initWithFrame:CGRectFromString(obj[@"frame"])];
             [btn setTitle:obj[@"title"] forState:UIControlStateNormal];
             [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+            [btn addTarget:self action:@selector(clickAction:) forControlEvents:UIControlEventTouchUpInside];
             btn.backgroundColor = backColor;
             btn.tag = 100+idx;
             [btn.layer setBorderWidth:2.0f];
@@ -47,36 +46,8 @@
             [self addSubview:btn];
         }];
         
-        NSArray *array1 = @[@{@"title":@"领导1",@"frame":@"{{265,0},{91,77}}"},
-                           @{@"title":@"领导2",@"frame":@"{{356,0},{91,77}}"},
-                           @{@"title":@"领导3",@"frame":@"{{265,77},{91,77}}"},
-                           @{@"title":@"领导4",@"frame":@"{{356,77},{91,77}}"}];
-        [array1 enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            UIButton  *btn = [[UIButton alloc] initWithFrame:CGRectFromString(obj[@"frame"])];
-            [btn setTitle:obj[@"title"] forState:UIControlStateNormal];
-            [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-            btn.backgroundColor = backColor;
-            [btn.layer setBorderWidth:2.0f];
-            btn.tag =1000+idx;
-            [btn.layer setBorderColor:borderColor.CGColor];
-            [self addSubview:btn];
-        }];
         
-        NSArray *array2 = @[@{@"title":@"领导1",@"frame":@"{{451,0},{91,77}}"},
-                            @{@"title":@"领导2",@"frame":@"{{542,0},{91,77}}"},
-                            @{@"title":@"领导3",@"frame":@"{{451,77},{91,77}}"},
-                            @{@"title":@"领导4",@"frame":@"{{542,77},{91,77}}"}];
-        [array2 enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            UIButton  *btn = [[UIButton alloc] initWithFrame:CGRectFromString(obj[@"frame"])];
-            [btn setTitle:obj[@"title"] forState:UIControlStateNormal];
-            [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-            btn.backgroundColor = backColor;
-            [btn.layer setBorderWidth:2.0f];
-            btn.tag = 10000+idx;
-            [btn.layer setBorderColor:borderColor.CGColor];
-            [self addSubview:btn];
-        }];
-        
+
         _btn6= [[UIButton alloc] initWithFrame:CGRectMake(91,_titleLabel2.frame.origin.y-5,139,235)];
         [_btn6 setTitle:@"文件" forState:UIControlStateNormal];
         [_btn6 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -98,6 +69,14 @@
 }
 
 #pragma mark - Action
+
+-(void)clickAction:(UIButton *)sender{
+    
+    if (_selectedBlock) {
+        _selectedBlock();
+    }
+    
+}
 
 - (void)playAction {
     

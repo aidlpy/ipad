@@ -37,6 +37,7 @@
 		2CAFF78A219FD17B002A4D36 /* YSControlModelMamaner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAFF789219FD17B002A4D36 /* YSControlModelMamaner.m */; };
 		2CB67BEB21D27ADE00DDEF79 /* YSControlLightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB67BEA21D27ADE00DDEF79 /* YSControlLightModel.m */; };
 		2CBA276221C54C9F006DB738 /* YSEQPThemeModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBA276121C54C9F006DB738 /* YSEQPThemeModelManager.m */; };
+		BC0EE83B2231337300D06905 /* MOneSubVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0EE83A2231337300D06905 /* MOneSubVC.m */; };
 		BC2B19EA219B20E50069A90E /* files.json in Resources */ = {isa = PBXBuildFile; fileRef = BC2B19E9219B20E50069A90E /* files.json */; };
 		BC306B432199FC3B0097CE48 /* location.json in Resources */ = {isa = PBXBuildFile; fileRef = BC306B422199FC3B0097CE48 /* location.json */; };
 		BC306B46219AEDF00097CE48 /* ELocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC306B45219AEDF00097CE48 /* ELocationViewController.m */; };
@@ -174,6 +175,8 @@
 		505AB0253285C81CB245D863 /* Pods-ipadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ipadUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ipadUITests/Pods-ipadUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6FD3A291CC8ECF19189D5E65 /* libPods-ipadUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ipadUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78DEBFBB4EF6B36FAAE731A2 /* Pods-ipad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ipad.release.xcconfig"; path = "Pods/Target Support Files/Pods-ipad/Pods-ipad.release.xcconfig"; sourceTree = "<group>"; };
+		BC0EE8392231337300D06905 /* MOneSubVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOneSubVC.h; sourceTree = "<group>"; };
+		BC0EE83A2231337300D06905 /* MOneSubVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOneSubVC.m; sourceTree = "<group>"; };
 		BC2B19E9219B20E50069A90E /* files.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = files.json; sourceTree = "<group>"; };
 		BC306B422199FC3B0097CE48 /* location.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = location.json; sourceTree = "<group>"; };
 		BC306B44219AEDF00097CE48 /* ELocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELocationViewController.h; sourceTree = "<group>"; };
@@ -599,6 +602,8 @@
 				BC306B45219AEDF00097CE48 /* ELocationViewController.m */,
 				BC306B47219B19AC0097CE48 /* EFileViewController.h */,
 				BC306B48219B19AC0097CE48 /* EFileViewController.m */,
+				BC0EE8392231337300D06905 /* MOneSubVC.h */,
+				BC0EE83A2231337300D06905 /* MOneSubVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -892,6 +897,7 @@
 				2CAFF769219FB9F7002A4D36 /* YSControlSocketModel.m in Sources */,
 				2CAFF78A219FD17B002A4D36 /* YSControlModelMamaner.m in Sources */,
 				BC85CFA62195AE9C00C23462 /* VerticalSelectView.m in Sources */,
+				BC0EE83B2231337300D06905 /* MOneSubVC.m in Sources */,
 				2C277D4F21A453DA00581900 /* YSEQPBaseModel.m in Sources */,
 				BC85CF972195829100C23462 /* MinorCheckViewController.m in Sources */,
 				BC85CF8221935D7A00C23462 /* ControlViewController.m in Sources */,
