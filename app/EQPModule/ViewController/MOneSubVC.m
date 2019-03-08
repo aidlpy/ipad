@@ -11,9 +11,28 @@
 
 @interface MOneSubVC ()
 
+@property (nonatomic, strong) YSEQPThemeOneModel *model;
+
 @end
 
 @implementation MOneSubVC
+
+- (void)dealloc
+{
+    self.model.screenNumber = 0;
+    [self.model request];
+}
+
+- (instancetype)initWithModel:(YSEQPThemeOneModel *)model;
+{
+    self = [super init];
+    if (self) {
+        self.model = model;
+        self.model.screenNumber = 1;
+        [self.model request];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,7 +60,6 @@
 
 -(void)backAction{
     
-
     [self.navigationController popViewControllerAnimated:YES];
 }
 

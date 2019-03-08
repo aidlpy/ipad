@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)UIButton *btn4;
 
 @property(nonatomic, strong) YSEQPThemeOneModel *model;
-@property(nonatomic, copy) void(^selectedBlock)(void);
+@property(nonatomic, copy) void(^selectedBlock)(YSEQPThemeOneModel *model);
 
 @end
 

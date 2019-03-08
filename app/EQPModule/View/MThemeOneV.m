@@ -73,7 +73,7 @@
 -(void)clickAction:(UIButton *)sender{
     
     if (_selectedBlock) {
-        _selectedBlock();
+        _selectedBlock(self.model);
     }
     
 }

@@ -103,9 +103,9 @@
         
         if ([weakSelf.currentView isKindOfClass:[MThemeOneV class]]) {
             MThemeOneV *mone = (MThemeOneV *)weakSelf.currentView;
-            mone.selectedBlock = ^{
+            mone.selectedBlock = ^(YSEQPThemeOneModel *model){
                 
-                MOneSubVC *vc = [[MOneSubVC alloc] init];
+                MOneSubVC *vc = [[MOneSubVC alloc] initWithModel:model];
                 [self.navigationController  pushViewController:vc animated:YES];
                 
             };

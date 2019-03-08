@@ -7,10 +7,13 @@
 //
 
 #import "BaseViewController.h"
+#import "YSEQPThemeOneModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MOneSubVC : BaseViewController
+
+- (instancetype)initWithModel:(YSEQPThemeOneModel *)model;
 
 @end
 
